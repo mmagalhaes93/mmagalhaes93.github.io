@@ -238,56 +238,18 @@
 <!-- Contact section -->
 <section id="contact">
     <div class="container">
-
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading">
-
-                    <!-- Attempting to avoid spam by removing @ and the dot in my domain -->
-                    Contact Me</h2>
-                <hr class="primary">
-                <p>If you have an interesting opportunity you
-                    can send me a message using the form below.</p>
-
-                <div id="emailForm">
-                    <form action="mailer.php"
-                          method="post" id="email_form">
-
-                        <input class="form-mail" type="text" id="form_name" placeholder="Name"/>
-                        <textarea class="form-mail" id="form_message" placeholder="Write your message" required></textarea>
-
-                        <input class="form-mail" type="email" id="form_email"
-                               placeholder="Your Email" required/>
-
-                        <input id="submit_form" type="submit" value="Send" style="margin-bottom:10px"/>
-                    </form>
-
-                </div>
-                <div id="afterSendingMsg" style="visibility: hidden;">
-                    <p> "Thank you, e-mail Sent. I will contact you shortly."</p>
-                </div>
-                <script>
-                    var submitButton = document.getElementById("submit_form");
-                    var form = document.getElementById("email_form");
-                    form.addEventListener("submit", function (e) {
-                       setTimeout(function() {
-                            submitButton.value = "Sending...";
-                            submitButton.disabled = true;
-
-                        }, 1);
-                        setTimeout(function() {
-                           document.getElementById('emailForm').style.visibility='hidden';
-                           document.getElementById('afterSendingMsg').style.visibility='visible';
-                        }, 1);
-
-                    });
-                </script>
+        <div class="col-lg-12 pb-3 text-center">
+                <h2 class="section-heading">Contact Me</h2>
+                <hr class="hr-black">
             </div>
-        </div>
-
         <!-- Email, LinkedIn, and GitHub links -->
         <div class="row justify-content-center">
-
+            <div class="col-4 col-sm-4 col-lg-2 text-center">
+                <a href="mailto:mariamagalhaes1328@gmail.com">
+                    <i class="fa fa-envelope fa-4x sr-icons"></i>
+                </a>
+                <p><a href="mailto:mariamagalhaes1328@gmail.com" class="text-blue">Email</a></p>
+            </div>
             <div class="col-4 col-sm-4 col-lg-2 text-center">
                 <a href="https://www.linkedin.com/in/mmagalhaes93/">
                     <i class="fa fa-linkedin-square fa-4x sr-icons"></i>
